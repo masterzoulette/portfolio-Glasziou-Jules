@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Rubik&display=swap");
+
+body {
+  margin: 0;
+  background-color: #23272a;
+  font-family: "Rubik", sans-serif;
+  list-style: none;
+  text-decoration: none;
+  color: white;
+}
+
+.animated {
+  transition-property: color, transform;
+  transition-duration: 0.3s;
+}
+
+div.overlay {
+  display: none;
+}
+div.n {
+  display: none;
+}
+
+div.trait {
+  height: 7px;
+  width: 100px;
+  margin-top: 0;
+  padding: 0;
+  margin-left: 53px;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: #fff;
+}
+
+/* nav bar */
+
+div.nav {
+  display: flex;
+  align-items: center;
+  background-color: #2c2f33;
+  height: 80px;
+  justify-content: flex-end;
+}
+
+div.nom {
+  z-index: 2;
+  position: absolute;
+  margin-top: 8px;
+  margin-left: 53px;
+}
+
+a.a-nav {
+  color: white;
+  margin-right: 20px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* parcours */
+
+h1.titre {
+  margin-left: 53px;
+  margin-top: 50px;
+  padding: 0;
+  margin-bottom: 0;
+  font-size: 40px;
+}
+
+div.bulle {
+  display: flex;
+  align-items: center;
+  background-color: #2c2f33;
+  border-radius: 20px;
+  margin-left: 100px;
+  margin-right: 100px;
+  height: 70px;
+  margin-top: 20px;
+}
+
+div.content {
+  display: flex;
+  align-items: center;
+}
+
+img.compte {
+  margin-left: 53px;
+}
+
+p.p-bulle {
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+p.p-un {
+  font-size: 20px;
+}
+
+.un {
+  margin-bottom: 100px;
+}
+
+@media (orientation: portrait) {
+  /* déplie */
+
+  div.n {
+    display: block;
+    right: 10px;
+    top: 15px;
+    position: absolute;
+    z-index: 4;
+  }
+
+  h1.nom {
+    font-size: 15px;
+    margin-top: 25px;
+  }
+
+  h1.nom {
+    display: block;
+    font-size: 15px;
+    margin-top: 25px;
+  }
+
+  div.nom {
+    left: 0;
+    margin-left: 10px;
+  }
+  a.a-nav {
+    display: none;
+  }
+
+  div.overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #23272a;
+    z-index: 3;
+  }
+
+  h1.titre-menu {
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
+
+  a.menu-a {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 20px;
+    align-items: center;
+  }
+
+  div.menu-nav {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  h1.titre {
+    font-size: 30px;
+    margin-left: 53px;
+  }
+
+  /* bulles */
+  div.bulle {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
